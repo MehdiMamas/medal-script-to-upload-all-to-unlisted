@@ -1,6 +1,14 @@
 # Medal On-Device Clip Uploader
 
-A browser console script that posts every clip still stored on your device in the Medal library.
+Post every clip still stored on your device in the Medal library, in one pass, from the browser console.
+
+![Example console output during a run](docs/images/demo.png)
+
+*Example console output of a run (clip IDs illustrative).*
+
+## Quick start
+
+Open your Medal library in Chrome, open DevTools (`F12`) > Console, paste [`script.js`](https://raw.githubusercontent.com/MehdiMamas/medal-script-to-upload-all-to-unlisted/main/script.js), press Enter. Nothing to install.
 
 ## Purpose
 
@@ -27,3 +35,13 @@ It uses Medal’s existing Post flow on the library page. It does not change pri
 ## Limits
 
 The selectors match Medal’s current library markup (`data-library-item`, `data-shape="on-device"`, the preview modal, and the scroll container). If Medal changes that UI, the script stops at the first missing element and prints an error. Run it only on your own account, and keep the tab open for the whole run.
+
+This is an independent project, not made by or affiliated with Medal.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md). Ideas and questions go to [Discussions](https://github.com/MehdiMamas/medal-script-to-upload-all-to-unlisted/discussions).
+
+## License
+
+[MIT](LICENSE)

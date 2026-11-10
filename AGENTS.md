@@ -8,4 +8,4 @@ Open the Medal library in Chrome while logged in, open DevTools Console, paste `
 
 ## Gotchas
 - It relies on Medal's current markup (`data-library-item`, `data-shape="on-device"`, the preview modal, the scroll container). If Medal changes its UI the script stops at the first missing element; update the selectors in `script.js`.
-- No build, dependencies, tests or CI. Changes are checked by running it against a real library.
+- No build or dependencies. CI runs `node --check script.js` (syntax only); behaviour is checked by running it against a real library.
